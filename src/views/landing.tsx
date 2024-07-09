@@ -207,9 +207,10 @@ const LandingPage = () => {
                 maxWidth: "100%",
                 overflow: "clip",
                 borderRadius: "8px",
+                pointerEvents: "none",
               }}
+              muted
               autoPlay
-              controls
               loop
             />
             <VFlex $fill style={{ gap: "18px" }}>
@@ -303,9 +304,9 @@ const LandingPage = () => {
               {width < 1200 && (
                 <video
                   src="/videos/dao-explain.mp4"
-                  style={{ maxHeight: "300px" }}
+                  style={{ maxHeight: "300px", pointerEvents: "none" }}
+                  muted
                   autoPlay
-                  controls
                   loop
                 />
               )}
@@ -316,10 +317,11 @@ const LandingPage = () => {
                       src="/videos/dao-explain.mp4"
                       style={{
                         maxWidth: "100%",
+                        pointerEvents: "none",
                         height: "100%",
                       }}
+                      muted
                       autoPlay
-                      controls
                       loop
                     />
                   </VFlex>
