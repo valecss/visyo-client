@@ -4,7 +4,6 @@ import { appWithTranslation } from "next-i18next";
 import { AppProps } from "next/app";
 import { Montserrat } from "next/font/google";
 import { useThemeColors } from "@/hooks/useTheme";
-import { Head } from "next/document";
 import { AppFooter } from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
