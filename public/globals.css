@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  text-decoration: none;
+
+  box-sizing: border-box !important;
+
+  transition:
+    background 0.2s,
+    border 0.2s;
+}
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
