@@ -66,12 +66,18 @@ const LandingPage = () => {
             }}
           >
             <BackgroundFiller $theme={theme} />
-            {/* <video src="/videos/hero.mp4" autoPlay controls loop /> */}
-            <img
+            <video
+              src="/videos/hero.webm"
+              style={{ pointerEvents: "none" }}
+              autoPlay
+              muted
+              loop
+            />
+            {/* <img
               src="/images/hero-placeholder.png"
               alt="placeholder"
               style={{ maxWidth: "100%" }}
-            />
+            /> */}
           </VFlex>
         )}
         <HFlex
@@ -148,26 +154,25 @@ const LandingPage = () => {
                 /* pointerEvents: "none", */
               }}
             >
-              {/* <video
-                src="/videos/hero.mp4"
+              <video
+                src="/videos/hero.webm"
                 loop
                 autoPlay
-                controls
+                muted
                 width={width > 1200 ? 800 : 600}
                 height={width > 1200 ? 630 : 430}
                 style={{
                   transform: `translateY(${width <= 1200 ? "20%" : "0"}px)`,
                 }}
-              /> */}
-              <img
+              />
+              {/*  <img
                 src="/images/hero-placeholder.png"
                 alt="placeholder"
                 style={{
                   width: numberToPx(width > 1200 ? 800 : 600),
                   height: numberToPx(width > 1200 ? 630 : 430),
                   transform: `translateY(${width <= 1200 ? "20%" : "0"}px)`,
-                }}
-              />
+                }} */}
             </VFlex>
           )}
         </HFlex>
@@ -202,7 +207,7 @@ const LandingPage = () => {
             }}
           >
             <video
-              src="/videos/blockchain.mp4"
+              src="/videos/blockchain.webm"
               style={{
                 maxWidth: "100%",
                 overflow: "clip",
@@ -303,7 +308,7 @@ const LandingPage = () => {
             <FeatureCard style={{ padding: 0, height: "fit-content" }}>
               {width < 1200 && (
                 <video
-                  src="/videos/dao-explain.mp4"
+                  src="/videos/dao-explain.webm"
                   style={{ maxHeight: "300px", pointerEvents: "none" }}
                   muted
                   autoPlay
@@ -314,7 +319,7 @@ const LandingPage = () => {
                 {width >= 1200 && (
                   <VFlex $fill>
                     <video
-                      src="/videos/dao-explain.mp4"
+                      src="/videos/dao-explain.webm"
                       style={{
                         maxWidth: "100%",
                         pointerEvents: "none",
