@@ -284,7 +284,11 @@ const LandingPage = () => {
                     funds
                   </Body>
                 </VFlex>
-                <AppButton type={2} small={width < 1200}>
+                <AppButton
+                  type={2}
+                  small={width < 1200}
+                  to="/docs/visyo-whitepaper.pdf"
+                >
                   <img src="/svg/document.svg" alt="Document" />
                   Whitepaper
                 </AppButton>

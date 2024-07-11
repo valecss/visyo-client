@@ -44,8 +44,8 @@ export const AppNavbar: React.FC<PropsWithChildren<NavbarProps>> = ({
       to: "/associations",
     },
     {
-      name: "About",
-      to: "/about",
+      name: "Whitepaper",
+      to: "/docs/visyo-whitepaper.pdf",
     },
     {
       name: "Roadmap",
