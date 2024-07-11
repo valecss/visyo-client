@@ -46,6 +46,7 @@ export const AppNavbar: React.FC<PropsWithChildren<NavbarProps>> = ({
     {
       name: "Whitepaper",
       to: "/docs/visyo-whitepaper.pdf",
+      target: "_blank",
     },
     {
       name: "Roadmap",
@@ -120,6 +121,7 @@ export const AppNavbar: React.FC<PropsWithChildren<NavbarProps>> = ({
           <NavigationFlex>
             {routes.map((el) => (
               <NavItem
+                target={el.target}
                 href={el.to}
                 $active={router.pathname.includes(el.to)}
                 style={{ color: colors.text }}
@@ -192,6 +194,7 @@ export const AppNavbar: React.FC<PropsWithChildren<NavbarProps>> = ({
             {routes.map((el) => (
               <NavItem
                 href={el.to}
+                target={el.target}
                 $active={router.pathname.includes(el.to)}
                 style={{
                   color: colors.text,

@@ -1,5 +1,6 @@
 import { useThemeColors, useThemeStore } from "@/hooks/useTheme";
 import { BaseColors } from "@/styles";
+import { useRouter } from "next/router";
 /* import { useRouter } from "next/router"; */
 import { CSSProperties, PropsWithChildren } from "react";
 import styled, { keyframes } from "styled-components";
@@ -81,13 +82,13 @@ export const AppButton: React.FC<PropsWithChildren<AppButtonProps>> = ({
 }) => {
   const colors = useThemeColors();
   const { theme } = useThemeStore();
-  /* const router = useRouter(); */
+  const router = useRouter();
 
   const handleClick = () => {
     if (typeof onClick !== "undefined") {
       onClick();
     } else if (typeof to !== "undefined") {
-      /* router.push(to); */
+      router.push(to);
     }
   };
 
