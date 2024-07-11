@@ -98,17 +98,23 @@ const LandingPage = () => {
             }}
           >
             <VFlex $fill style={{ gap: numberToPx(Spacings[400]) }}>
-              <Heading1>
-                Your{" "}
-                <span style={{ color: BaseColors.light.primary }}>voice</span>,
-                your{" "}
-                <span style={{ color: BaseColors.light.primary }}>choice</span>:
-                direct your{" "}
-                <span style={{ color: BaseColors.light.primary }}>
-                  donations
-                </span>{" "}
-                with Blockchain Transparency
-              </Heading1>
+              <VFlex style={{ gap: "4px" }}>
+                <Heading1>
+                  Your{" "}
+                  <span style={{ color: BaseColors.light.primary }}>voice</span>
+                  , your{" "}
+                  <span style={{ color: BaseColors.light.primary }}>
+                    choice
+                  </span>
+                </Heading1>
+                <Heading3 style={{ fontWeight: 600 }}>
+                  Direct your{" "}
+                  <span style={{ color: BaseColors.light.primary }}>
+                    donations
+                  </span>{" "}
+                  with Blockchain Transparency
+                </Heading3>
+              </VFlex>
               <Body style={{ maxWidth: "600px" }}>
                 Our mission is to revolutionize charitable giving through the
                 power of Web3 technology. We aim to build a transparent and

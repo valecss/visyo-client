@@ -2,22 +2,22 @@ import styled from "styled-components";
 
 export const Heading1 = styled.h1`
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-size: 32px;
 
   font-weight: 600;
   letter-spacing: -0.12rem;
   line-height: 120%;
 
   @media screen and (min-width: 576px) {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   @media screen and (min-width: 765px) {
-    font-size: 38px;
+    font-size: 42px;
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: 52px;
+    font-size: 64px;
   }
 `;
 

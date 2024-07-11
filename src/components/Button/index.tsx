@@ -45,7 +45,7 @@ const BaseButton = styled.button<{ $small?: boolean }>`
 `;
 
 const Primary = styled(BaseButton)`
-  background: ${BaseColors.light.primary};
+  background: ${true ? "#1db1c7" : BaseColors.light.primary};
   color: #fdfeff;
 
   &:hover {
